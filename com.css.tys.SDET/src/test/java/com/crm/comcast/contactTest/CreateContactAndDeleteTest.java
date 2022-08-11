@@ -141,7 +141,7 @@ public void CreateContact() throws Throwable
   
   //verify
   contactInfoPage cifo=new contactInfoPage(driver);
- //wLib.waitForElement(driver, cifo.getDeleteContactMsg());
+ wLib.waitForElement(driver, cifo.getDeleteContactMsg());
   String con=cifo.getDeleteContactMsg().getText();
   
   Assert.assertTrue(con.contains(lastname));
